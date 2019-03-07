@@ -1,1 +1,17 @@
-# SudokuCozucu
+<p><strong><u>GEZİNGE(TRAJECTORY) VERİSİ İŞLEME</u></strong></p>
+<p style="text-align: justify;"><strong><span style="font-size: 12.0pt;">&Ouml;zet:</span></strong></p>
+<p style="line-height: 150%;"><span style="font-size: 10pt;"><em>Projede multi thread yapısı kullanılarak sudoku tasarladı. Verilen 9x9 sudoku &uuml;zerinden &ccedil;&ouml;z&uuml;m&uuml;n bulunması hedeflendi. Satır, s&uuml;tun, grup adında &uuml;&ccedil; tane thread kullanıldı birisi satır satır bakıyor diğeri s&uuml;tun s&uuml;tun geziyor &uuml;&ccedil;&uuml;nc&uuml;s&uuml; de 3x3 l&uuml;k karede geziniyor. Thread kullanılmasının sebebi eşzamanlı olarak farklı h&uuml;crelerden &ccedil;&ouml;z&uuml;me başlanacak olmasıdır.</em></span></p>
+<p style="line-height: 150%;"><span style="font-size: 10pt;"><em>Proje file, about, new game, solve, clear, list kısımlarından oluşmaktadır. File; newgame yani yeni oyun başlatır. Quit; projeden &ccedil;ıkıs sağlar. Solve adım adım thread kullanıldığı kısım adım adım &ccedil;&ouml;z&uuml;m bulur. Clear sudokuyu temizler. List de threadlarin &ccedil;alışma hızının karşılaştırıldıgı yerdir.</em></span></p>
+<p style="text-align: justify;"><strong><span style="font-size: 12.0pt;">Genel Yapı:</span></strong></p>
+<p style="line-height: 115%;"><em><span style="font-size: 10pt;">Program Windows Form Application uygulaması olarak geliştirilmiştir.</span></em></p>
+<p style="line-height: 115%;"><em><span style="color: black; font-size: 10pt;">ToolStripMenuItem i&ccedil;inde new game, solve, clear, timer kısımları vardır. New game kısmı .txt uzantılı dosyayı &ccedil;ağırıyor open file dialog da, solve kısmı threadin &ccedil;&ouml;z&uuml;m bulduğu yer adım adım, clear kısmı sudoku table ı siliyor ve timer kısmında da threadin calışma s&uuml;resini g&ouml;steriyor. </span></em></p>
+<p style="line-height: 115%;"><em><span style="font-size: 10pt;">Ve .txt uzantılı dosyayı aynı ipucları sudokunun &uuml;zerinde g&ouml;r&uuml;l&uuml;yor. Ardında da &ccedil;&ouml;z&uuml;me hazır.</span></em></p>
+<p style="line-height: 115%;"><em><span style="font-size: 10pt;">İpu&ccedil;ları gelen sudokunun &ccedil;&ouml;z&uuml;m aşamasına gelindi. Solve tuşuna basarak bu islem ger&ccedil;ekleştiriliyor.</span></em></p>
+<p style="line-height: 115%;"><em><span style="font-size: 10pt;">Clear butonu t&uuml;m sudoku tahtasındakilerı siliyor.Time zaman tutuyor.</span></em></p>
+<p style="line-height: 115%;"><em><span style="font-size: 10pt;">About kısmında sudoku nedır butonuna basınca ayrı bır form da sudokunun kuralları &ccedil;ıkıyor.</span></em></p>
+<p style="line-height: 115%;"><em><span style="font-size: 10pt;">About kısmında hakkında kısmında projeyı yapan kişiler hakkında iletişim bilgileri yer alıyor.</span></em></p>
+<p><em><span style="font-size: 10pt;">Son olarak da &uuml;&ccedil; threadin de calışmasını aynı anda g&ouml;sterildiğinde hızına g&ouml;re kim hızlıysa zaman bittiği anda o kalır.</span></em></p>
+<p><strong><span style="font-size: 12.0pt;">Sonu&ccedil;:</span></strong></p>
+<p style="line-height: 115%;"><span style="font-size: 10pt;">Sudoku multıthread projesi , aynı anda bir&ccedil;ok farklı noktadan 3 thread ile &ccedil;&ouml;z&uuml;m sunabilmektedir. Normal sudokulara oranla senkronızasyon sağlar.</span></p>
+<p style="line-height: 115%;">&nbsp;</p>
+<p style="margin-right: 0cm;"><strong><em><span style="font-size: 11.0pt; font-family: 'Calibri Light',sans-serif;">&nbsp;</span></em></strong></p>
